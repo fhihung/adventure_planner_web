@@ -4,25 +4,32 @@
   justify-content: space-between;
   align-items: stretch;
   gap: 40px;
+  padding: 20px; /* Thêm padding cho phần download */
+}
 
-  img {
-    width: 50%;
-    max-height: 340px;
-    object-fit: cover;
-    object-position: center;
-  }
+.download img {
+  width: 50%;
+  max-height: 340px;
+  object-fit: cover;
+  object-position: center;
+}
 
-  .texts {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.download .texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-    h3 {
-      font-size: var(--title-font-size);
-    }
+.download .texts h3 {
+  font-size: var(--title-font-size);
+}
 
-    button {
-      align-self: flex-start;
-    }
-  }
+.download .texts button, 
+.download .texts a.button {
+  align-self: flex-start;
+  padding: 10px 20px; /* Thêm padding cho nút */
+  background-color: var(--primary-color); /* Màu nền cho nút */
+  color: white; /* Màu chữ */
+  text-decoration: none; /* Bỏ gạch chân của thẻ a */
+  border-radius: 5px; /* Bo góc cho nút */
 }

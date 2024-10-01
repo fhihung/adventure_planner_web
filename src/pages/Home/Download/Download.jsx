@@ -4,13 +4,19 @@ import Button from '../../../components/Button/Button';
 const Download = () => {
   return (
     <div className="section download">
-      <img src="/images/avt.png" alt="" />
+      <img src="/images/avt.png" alt="AdventurePlan Avatar" />
       <div className="texts">
         <h3>Tải ngay AdventurePlan!</h3>
         <p>
-        Đừng chần chừ nữa! Hãy tải ngay AdventurePlan! trên App Store hoặc Google Play để bắt đầu hành trình khám phá của bạn!
+          Đừng chần chừ nữa! Hãy tải ngay AdventurePlan! để bắt đầu hành trình khám phá của bạn!
         </p>
-        <Button>Get Started</Button>
+        <a 
+          href="https://github.com/fhihung/adventure_planner_web/releases/download/0.0.1/app-production.apk" 
+          download 
+          className="button"
+        >
+          Tải xuống
+        </a>
       </div>
     </div>
   );

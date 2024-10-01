@@ -2,42 +2,46 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   gap: 100px;
+}
 
-  .texts {
-    flex: 1;
+.intro .texts {
+  flex: 1;
+}
 
-    h3 {
-      font-size: var(--title-font-size);
-    }
-    p {
-      padding: 40px 0;
-    }
-    button {
-      padding: 12px 20px;
-      font-size: 16px;
-      font-weight: 500;
-      background-color: var(--primary-color);
-      outline: none;
-      border: none;
-      color: var(--white-color);
-      transition: var(--transition-effect);
+.intro .texts h3 {
+  font-size: var(--title-font-size);
+}
 
-      &:hover {
-        cursor: pointer;
-        background-color: var(--primary-color-hover);
-      }
-    }
-  }
+.intro .texts p {
+  padding: 40px 0;
+}
 
-  .image {
-    flex: 1;
+.intro .texts a.button {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+  color: var(--white-color);
+  text-decoration: none; /* Bỏ gạch chân của thẻ a */
+  transition: var(--transition-effect);
+  border-radius: 5px; /* Thêm bo góc */
+}
 
-    img {
-      width: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
-  }
+.intro .texts a.button:hover {
+  cursor: pointer;
+  background-color: var(--primary-color-hover);
+}
+
+.intro .image {
+  flex: 1;
+}
+
+.intro .image img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
