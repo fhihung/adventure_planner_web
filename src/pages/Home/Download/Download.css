@@ -1,0 +1,28 @@
+.download {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 40px;
+
+  img {
+    width: 50%;
+    max-height: 340px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h3 {
+      font-size: var(--title-font-size);
+    }
+
+    button {
+      align-self: flex-start;
+    }
+  }
+}

@@ -1,0 +1,244 @@
+.TripPlan {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    color: var(--primary-color);
+
+    .content{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        
+        h1{
+            margin-bottom: 25px;
+        }
+
+        img{
+            height: 500px;
+            width: 1116px;
+        }
+
+        .search_box{
+            height: 128px;
+            margin: 0 100px;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            position: absolute;
+            top: 480px;
+            border-radius: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+            .location .days{
+                width: 209px;
+                height: 62px;
+            }
+
+            .location{
+                margin: 0 25px;
+                padding-right: 10px;
+
+                .title{
+                    display: flex;
+                    align-items: center;
+
+                    img{
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 10px;
+                    }
+                }
+
+                input{
+                    border: none;
+                    border-bottom: 1px solid #356bd6;
+                    height: 28px;
+                    margin-top: 5px;
+                }
+            }
+
+            .days{
+                margin: 0 25px;
+                padding-right: 10px;
+
+                .title{
+                    display: flex;
+                    align-items: center;
+
+                    img{
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 10px;
+                    }
+                }
+
+                input{
+                    border: none;
+                    border-bottom: 1px solid #356bd6;
+                    height: 28px;
+                    margin-top: 5px;
+                }
+            }
+
+            .dropdown{
+                width: 364px;
+                height: 48px;
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                .dropbtn{
+                    color: #154096;
+                    background-color: white;
+                    /* padding: 10px 20px; */
+                    font-size: 16px;
+                    display: flex;
+                    border: none;
+                    position: relative;
+                    cursor: pointer;
+
+                    img{
+                        height: 24px;
+                        width: 24px;
+                        margin: 10px 20px 0 0;
+                    }
+
+                    #selected-text{
+                        margin-top: 15px;
+                        /* width: 200px; */
+                    }
+
+                    .arrow{
+                        text-align: left;
+                        position: absolute;
+                        right: -200px;
+                    }
+                }
+
+
+                .dropdown-content{
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    top: 50px;
+                    left: 60px;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+
+                    a{
+                        color: #154096;
+                        padding: 12px 16px;
+                        text-decoration: none;
+                        display: block;
+                    }
+
+                    a:hover{
+                        background-color: #f1f1f1;
+                    }
+                }
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .searchbutton{
+                width: 60px;
+                height: 60px;
+
+                button{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 200px;
+                }
+
+                img{
+                    width: 30px;
+                    height: 30px;
+                    margin-left: -4px;
+                }
+            }
+        }
+
+        .listPlan{
+            width: 900px;
+            margin-top:50px;
+
+            .block{
+                margin: 50px 0 0 200px;
+                padding-bottom: 10px;
+                padding: 25px;
+                box-shadow: 0 0 10px rgb(218, 216, 216);
+
+                p{
+                    font-size:28px;
+                    font-weight:bold;
+                }
+    
+                .item{
+                    display: flex;
+                    padding: 25px 0;
+                    border-bottom: 1px solid #ccc;
+    
+                    .title{
+                        display: flex;
+                        padding-right: 115px;
+                        border-right: 1px solid #ccc;
+    
+                        .time{
+                            width: 100px;
+                            height: 42px;
+                            border-radius: 20px;
+                            border: 1px solid #356bd6;
+                            line-height: 42px;
+                            text-align: center;
+                            font-weight: 500;
+                            margin-right: 15px;
+                        }
+    
+                        .active{
+                            .name{
+                                font-size:24px;
+                                font-weight:bold;
+                            }
+    
+                            .des{
+                                color: #356BD6;
+                            }
+                        }
+                    }
+    
+                    .info{
+                        padding-left: 25px;
+    
+                        p img {
+                            vertical-align: middle;
+                        }
+    
+                        p{
+                            height: 38px;
+                            line-height: 38px;
+                            font-size: 18px;
+                            font-weight: normal;
+                            color: #356BD6;
+    
+                            img{
+                                width: 30px;
+                                height: 30px;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .section {
+        padding: 0 5%;
+    }
+}

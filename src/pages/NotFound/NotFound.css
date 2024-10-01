@@ -1,0 +1,9 @@
+.not-found {
+  padding: 100px 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  button {
+    align-self: flex-start;
+  }
+}

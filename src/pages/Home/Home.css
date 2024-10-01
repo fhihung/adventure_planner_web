@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  color: var(--primary-color);
+
+  .section {
+    padding: 0 5%;
+  }
+}

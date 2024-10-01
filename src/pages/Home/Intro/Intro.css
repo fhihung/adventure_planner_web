@@ -1,0 +1,43 @@
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 100px;
+
+  .texts {
+    flex: 1;
+
+    h3 {
+      font-size: var(--title-font-size);
+    }
+    p {
+      padding: 40px 0;
+    }
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: 500;
+      background-color: var(--primary-color);
+      outline: none;
+      border: none;
+      color: var(--white-color);
+      transition: var(--transition-effect);
+
+      &:hover {
+        cursor: pointer;
+        background-color: var(--primary-color-hover);
+      }
+    }
+  }
+
+  .image {
+    flex: 1;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
