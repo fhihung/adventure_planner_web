@@ -11,7 +11,7 @@ const Download = () => {
           Đừng chần chừ nữa! Hãy tải ngay AdventurePlan! để bắt đầu hành trình khám phá của bạn!
         </p>
         <a 
-          href="https://github.com/fhihung/adventure_planner_web/releases/download/0.0.1/app-production.apk" 
+          href="https://github.com/fhihung/adventure_planner_web/releases/download/1.0.0/app-production.apk" 
           download 
           className="button"
         >

@@ -10,7 +10,7 @@ const Intro = () => {
           giúp bạn khám phá thế giới một cách dễ dàng và thú vị hơn bao giờ hết!
         </p>
         <a 
-          href="https://github.com/fhihung/adventure_planner_web/releases/download/0.0.1/app-production.apk" 
+          href="https://github.com/fhihung/adventure_planner_web/releases/download/1.0.0/app-production.apk" 
           download 
           className="button"
         >
